@@ -34,6 +34,11 @@
     justify-content: space-around;
 }
 
+.sub-div13 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .btn1 {
     background-color: rgb(67, 138, 245);
     width: 85px;
