@@ -1,0 +1,21 @@
+.main-div {
+    background-color: #76d3f8;
+    width: 30%;
+    border-radius: 50px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.sub-div1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-div11 {
+    display: flex;
+    justify-content: end;
+}
+
+.sub-div12 {
+    justify-content: end;
+}
