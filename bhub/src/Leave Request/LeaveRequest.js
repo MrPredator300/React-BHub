@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 */
 
+
+
 import React, { useState } from 'react'
 import "./LeaveRequest.css"
 
@@ -23,8 +25,8 @@ const LeaveRequest = () => {
             <div className="sub-div11">
               <select className="Leave-type">
                   <option value=' '>Leave Type</option>
-                  <option value='Cold'>Cold</option>
-                  <option value='Fever'>Fever</option>
+                  <option value='Cold'>Restricted Holiday</option>
+                  <option value='Fever'>Earned Leave</option>
                   <option value='Maternity Leave'>Maternity Leave</option>
               </select>
             </div>
@@ -37,11 +39,13 @@ const LeaveRequest = () => {
             </div>
             <br />
             <div className="sub-div13">
-              {/* <input type='text' value="" placeholder='From' onClick={handelInput} /> */}
-              <input type='date' />
+              <input type='text' value="" placeholder='From' onClick={handelInput} />
+              <input className="date-input1" type="date"  />
+              {/* <input type='date' /> */}
               {" "}
-              {/* <input type='text' value="" placeholder='To' /> */}
-              <input type='date' />
+              <input type='text' value="" placeholder='To' />
+              <input className="date-input2" type="date"  />
+              {/* <input type='date' /> */}
             </div>
             <br />
             <div className="sub-div14">
