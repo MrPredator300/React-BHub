@@ -5,7 +5,21 @@ import "./BlueBinaries.css"
 const BlueBinaries = () => {
   return (
     <div className="main-div">
-        <h1>BlueBinaries Page</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+        <span className='heading'><strong>BlueBinaries</strong></span><br />
+        <span><strong>Joins SOAFEE</strong></span><br />
+        <span><strong>to accelerate the</strong></span><br />
+        <span><strong>evolution of</strong></span><br />
+        <span><strong>Software-Defined</strong></span><br />
+        <span><strong>Vehicles</strong></span>
     </div>
   )
 }
