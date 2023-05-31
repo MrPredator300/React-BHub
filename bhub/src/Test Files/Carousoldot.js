@@ -1,51 +1,37 @@
-import React from 'react'
-import Slider from 'react-slick';
-import MagicSliderDots from 'react-magic-slider-dots';
+import React, { useState } from 'react'
 
-//import 'slick-carousel/slick/slick.css';
-//import 'slick-carousel/slick/slick-theme.css';
+import "./Carousoldot.css"
 
 const Carousoldot = () => {
-    const settings = {
-        dots: true,
-        arrows: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        appendDots: dots => {
-          return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />;
-        }
-      };
+  const [currentPage,setCurrentPage] = useState(1);
 
-    return (
-        <Slider {...settings}>
-            <div>
-            <h3>1</h3>
-            </div>
-            <div>
-            <h3>2</h3>
-            </div>
-            <div>
-            <h3>3</h3>
-            </div>
-            <div>
-            <h3>4</h3>
-            </div>
-            <div>
-            <h3>5</h3>
-            </div>
-            <div>
-            <h3>6</h3>
-            </div>
-            <div>
-            <h3>7</h3>
-            </div>
-            <div>
-            <h3>8</h3>
-            </div>
-        </Slider>
-    )
+  return (
+    <div className='main-div'>
+      <div className='sub-div1'>
+        <h3>Carousoldot File Test</h3>
+      </div>
+      <div className='sub-div2'>
+        {currentPage == 1 && (
+          <div className='sub-div21'>
+            <h2>IN TIME</h2>
+            <h1>09:20</h1>
+          </div>
+        )}
+        {currentPage == 2 && (
+          <div className="sub-div22">
+            <h2>OUT TIME</h2>
+            <h1>20:20</h1>
+          </div>
+        )}
+      </div>
+      <div className='sub-div3'>
+        <div className='dots-container'>
+          <div className={`dot ${currentPage === 1 ? `active` : ''}`} onClick={()=> setCurrentPage(1)} />
+          <div className={`dot ${currentPage === 2 ? `active` : ''}`} onClick={()=> setCurrentPage(2)} />
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Carousoldot
